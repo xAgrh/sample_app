@@ -9,17 +9,18 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'bcrypt-ruby', '3.1.2'
 
 group :development, :test do
-  gem 'rspec-rails', '2.13.1'
-  gem 'guard-rspec', '2.5.0'
-  gem 'spork-rails', '4.0.0'
-  gem 'guard-spork', '1.5.0'
-  gem 'childprocess', '0.5.1'
+  gem 'rspec-rails', '3.1.0'
+  gem 'guard-rspec', '4.5.0'
+  gem 'spring-commands-rspec'
+  gem 'rb-fsevent' if `uname` =~ /Darwin/
+  gem 'growl'
+
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
-  gem 'libnotify', '0.8.0'
+  gem 'capybara', '2.2.0'
+
 end
 
 
