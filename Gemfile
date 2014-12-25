@@ -13,7 +13,6 @@ group :development, :test do
   gem 'rspec-rails', '3.1.0'
   gem 'guard-rspec', '4.5.0'
   gem 'spring-commands-rspec'
-  gem 'rb-fsevent' if `uname` =~ /Darwin/
   gem 'growl'
 
 end
@@ -40,3 +39,8 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+group :development do
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+end
