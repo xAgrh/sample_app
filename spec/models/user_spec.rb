@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+require 'rspec/its'
 
 describe User do
   
