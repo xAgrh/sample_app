@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/xAgrh/sample_app.svg?branch=master)](https://travis-ci.org/xAgrh/sample_app)[![Coverage Status](https://coveralls.io/repos/xAgrh/sample_app/badge.png)](https://coveralls.io/r/xAgrh/sample_app)
+
 ## Ruby on Rails Tutorial by Michael Hartl
 
 Это пример приложения из книги
