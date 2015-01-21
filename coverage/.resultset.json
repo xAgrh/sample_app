@@ -82,6 +82,34 @@
         1,
         null
       ],
+      "/Users/Macbook/rails/sample_app/spec/models/relationship_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        6,
+        6,
+        6,
+        null,
+        6,
+        null,
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/Macbook/rails/sample_app/app/models/relationship.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Macbook/rails/sample_app/spec/models/user_spec.rb": [
         1,
         1,
@@ -89,13 +117,14 @@
         1,
         null,
         1,
-        32,
+        33,
         null,
         null,
         null,
-        27,
+        28,
         null,
         null,
+        2,
         2,
         2,
         2,
@@ -268,8 +297,9 @@
       "/Users/Macbook/rails/sample_app/app/models/user.rb": [
         1,
         1,
+        1,
         null,
-        164,
+        174,
         1,
         null,
         1,
@@ -282,11 +312,11 @@
         1,
         null,
         1,
-        156,
+        166,
         null,
         null,
         1,
-        743,
+        753,
         null,
         null,
         1,
@@ -296,7 +326,7 @@
         1,
         null,
         1,
-        109,
+        119,
         null,
         null,
         null
@@ -916,6 +946,6 @@
         null
       ]
     },
-    "timestamp": 1421746538
+    "timestamp": 1421860892
   }
 }
