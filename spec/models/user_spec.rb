@@ -22,10 +22,13 @@ describe User do
   it { should respond_to(:microposts) }
   it { should respond_to(:feed) }
   it { should respond_to(:relationships) }
-  it { should respond_to(:folowed_users) }
+  it { should respond_to(:followed_users) }
   it { should respond_to(:following?) } # following? method takes in a user, called other_user, and checks to see if a followed user with that id exists in the database
   it { should respond_to(:follow!) }    # follow! method calls create! through the relationships association to create the following relationship
   it { should respond_to(:unfollow!) }
+
+  it { should respond_to(:reverse_relationships) }
+  it { should respond_to(:followers) }
 
   it { should be_valid }
   it { should_not be_admin }
@@ -179,7 +182,12 @@ describe User do
     end
 
     it { should be_following(other_user) }
-    its(:followed_users) { should include(other_user)
+    its(:followed_users) { should include(other_user) }
+
+    describe "followed user" do
+      subject { other_user }
+      its(:followers) { should include(@user) }
+    end
 
     describe "and unfollowing" do
       before { @user.unfollow!(other_user) }
@@ -187,6 +195,8 @@ describe User do
       it { should_not be_following(other_user) }
       its(:followed_users) { should_not include(other_user) }
     end
+
+
   end
 
 end
