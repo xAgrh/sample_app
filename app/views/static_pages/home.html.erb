@@ -17,13 +17,19 @@
     </div>
 <% else %>
     <div class="center hero-unit">
-      <h1>Welcome to the Sample App</h1>
+      <h1>Это пример приложения из книги Ruby on Rails Tutorial</h1>
 
-      <h2>
-        This is the home page for the
-        <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-        sample application.
+
+      <h2>Создание приложения по этой книге помогло мне разобраться во всех тонкостях разработки подобия Твиттера с безопасной авторизацией и поддержкой сессий пользователей (не используя сторонние гемы авторизации).
+      Включает в себя:
+        <ul>
+          <li>- большое количество программирования через тесты;</li>
+          <li>- проводит через все шаги от добавления валидаций и создания различных моделей (user, micropost and session) до работы с паршелами и проведения информации через различные классы и обработчики ошибок;</li>
+        </ul>
+      <a href="https://sample-app-xagrh.herokuapp.com/">Приложение задеплоино на Heroku</a>
       </h2>
+
+
 
       <%= link_to "Sign up now!", signup_path,
                                   class: "btn btn-large btn-primary" %>
