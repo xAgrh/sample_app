@@ -16,26 +16,26 @@
       </div>
     </div>
 <% else %>
-    <div class="center hero-unit">
-      <h1>Это пример приложения из книги Ruby on Rails Tutorial</h1>
+    <div class="hero-unit">
+      <h1>Ruby on Rails Tutorial</h1>
 
 
-      <h2>Создание приложения по этой книге помогло мне разобраться во всех тонкостях разработки подобия Твиттера с безопасной авторизацией и поддержкой сессий пользователей (не используя сторонние гемы авторизации).
-      Включает в себя:
+      <p>Создание приложения по этой книге помогло мне разобраться во всех тонкостях разработки подобия Твиттера с безопасной авторизацией и поддержкой сессий пользователей (не используя сторонние гемы авторизации).
+      </br>Включает в себя:
         <ul>
           <li>- большое количество программирования через тесты;</li>
           <li>- проводит через все шаги от добавления валидаций и создания различных моделей (user, micropost and session) до работы с паршелами и проведения информации через различные классы и обработчики ошибок;</li>
         </ul>
-      <a href="https://sample-app-xagrh.herokuapp.com/">Приложение задеплоино на Heroku</a>
-      </h2>
+      </p>
+
+      <div class="center">
+        <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+        </br></br>
+        <h2>To look how it works you can use login: <b>user1@test.com</b> and pass: <b>foobar</b></h2>
+        <%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %>
+      </div>
 
 
-
-      <%= link_to "Sign up now!", signup_path,
-                                  class: "btn btn-large btn-primary" %>
-      </br></br></br></br></br></br>
-      <h2>To look how it works you can use login: <b>user1@test.com</b> and pass: <b>foobar</b></h2>
-      <%= link_to "Sign in", signin_path, class: "btn btn-large btn-primary" %>
     </div>
 
     <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
